@@ -69,7 +69,6 @@ public class MouseCalc {
 
     // Boolean options
     options.addOption( "h", "help",  false, "Print help message" );
-    options.addOption( "q", "quiet", false, "Minimal output"     );
 
     // Options with arguments
     options.addOption( OptionBuilder.withLongOpt("sensitivity")     .withDescription( "Current value of sensitivity" )     .hasArg() .withArgName("value") .create("s") );
