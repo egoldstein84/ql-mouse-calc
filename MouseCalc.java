@@ -71,11 +71,11 @@ public class MouseCalc {
     options.addOption( "h", "help",  false, "Print help message" );
 
     // Options with arguments
-    options.addOption( OptionBuilder.withLongOpt("sensitivity")     .withDescription( "Current value of sensitivity" )     .hasArg() .withArgName("value") .create("s") );
-    options.addOption( OptionBuilder.withLongOpt("m-yaw")           .withDescription( "Current value of m_yaw" )           .hasArg() .withArgName("value") .create("y") );
-    options.addOption( OptionBuilder.withLongOpt("m-pitch")         .withDescription( "Current value of m_pitch" )         .hasArg() .withArgName("value") .create("p") );
-    options.addOption( OptionBuilder.withLongOpt("cl-mousesenscap") .withDescription( "Current value of cl_mouseSensCap" ) .hasArg() .withArgName("value") .create("c") );
-    options.addOption( OptionBuilder.withLongOpt("cl-mouseaccel")   .withDescription( "Current value of cl_mouseAccel" )   .hasArg() .withArgName("value") .create("a") );
+    options.addOption( OptionBuilder.withLongOpt("sensitivity")     .withDescription( "Current value of sensitivity" )     .hasArg() .withArgName("sensitivity")     .create("s") );
+    options.addOption( OptionBuilder.withLongOpt("m-yaw")           .withDescription( "Current value of m_yaw" )           .hasArg() .withArgName("m_yaw")           .create("y") );
+    options.addOption( OptionBuilder.withLongOpt("m-pitch")         .withDescription( "Current value of m_pitch" )         .hasArg() .withArgName("m_pitch")         .create("p") );
+    options.addOption( OptionBuilder.withLongOpt("cl-mousesenscap") .withDescription( "Current value of cl_mouseSensCap" ) .hasArg() .withArgName("cl_mouseSensCap") .create("c") );
+    options.addOption( OptionBuilder.withLongOpt("cl-mouseaccel")   .withDescription( "Current value of cl_mouseAccel" )   .hasArg() .withArgName("cl_mouseAccel")   .create("a") );
 
     try {
       CommandLine line = parser.parse( options, args );
