@@ -63,7 +63,7 @@ public class MouseCalc {
 
     // create the command line parser
     CommandLineParser parser = new PosixParser();
-    
+
     // create the Options
     Options options = new Options();
 
@@ -77,7 +77,7 @@ public class MouseCalc {
     options.addOption( OptionBuilder.withLongOpt("m-pitch")         .withDescription( "Current value of m_pitch" )         .hasArg() .withArgName("value") .create("p") );
     options.addOption( OptionBuilder.withLongOpt("cl-mousesenscap") .withDescription( "Current value of cl_mouseSensCap" ) .hasArg() .withArgName("value") .create("c") );
     options.addOption( OptionBuilder.withLongOpt("cl-mouseaccel")   .withDescription( "Current value of cl_mouseAccel" )   .hasArg() .withArgName("value") .create("a") );
-    
+
     try {
       CommandLine line = parser.parse( options, args );
 
@@ -121,7 +121,7 @@ public class MouseCalc {
         System.out.format("Using provided m_cpi           : %d\n", m_cpi);
       } else {
         System.out.println("m_cpi not provided, cannot continue");
-	System.out.println();
+        System.out.println();
         HelpFormatter formatter = new HelpFormatter();
         formatter.printHelp("MouseCalc", options, true);
 
@@ -131,9 +131,9 @@ public class MouseCalc {
         System.err.println("settings are, you can use \"\\set <variable>\" in the console to see what the");
         System.err.println("engine is using at the moment.");
 
-	System.exit(1);
+        System.exit(1);
       }
-      
+
       System.out.println();
     }
     catch(ParseException exception) {
@@ -206,9 +206,9 @@ public class MouseCalc {
     System.out.format( "set m_yaw %-8.3f                // Horizontal mouse sensitivity modifier [%.3f]\n", Constants.NEW_M_YAW, Constants.DEFAULT_M_YAW);
     System.out.format( "set m_pitch %-8.3f              // Vertical mouse sensitivity modifier [%.3f]\n", new_m_pitch, Constants.DEFAULT_M_PITCH);
     System.out.format( "set cl_mouseAccel %-8.3f        // Acceleration multiplier [%.3f]\n", new_cl_mouseAccel, Constants.DEFAULT_CL_MOUSEACCEL);
-    System.out.format( "set cl_mouseSensCap %-8.3f      // Ceiling for sensitivity adjustment [%.3f]\n", new_cl_mouseSensCap, Constants.DEFAULT_CL_MOUSESENSCAP); 
+    System.out.format( "set cl_mouseSensCap %-8.3f      // Ceiling for sensitivity adjustment [%.3f]\n", new_cl_mouseSensCap, Constants.DEFAULT_CL_MOUSESENSCAP);
     System.exit(0);
 
   } // End of main()
-      
+
 } // End of class MouseCalc
