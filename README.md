@@ -7,7 +7,7 @@ Background
 ----------
 
 You can get background on this new configuration feature, and why you might
-want to use it, from [SyncError's post explaining the whole thing][1].
+want to use it, from [SyncError's post explaining the whole thing] [1].
 
 Basically, the advantage of the new system is that it allows players to
 directly compare sensitivity settings, regardless of mouse hardware sampling
@@ -44,4 +44,4 @@ engine is using at the moment.
 
 
 
-[1]: http://www.quakelive.com/forum/showthread.php?15458 *quakelive.com*
+[1]: http://www.quakelive.com/forum/showthread.php?15458 "quakelive.com"
